@@ -69,6 +69,51 @@ footer {
 .about-us {
     display: flex;
     margin: 5rem;
+    flex-wrap: wrap;
+}
+
+.about-us-container {
+    display: grid;
+    grid-template-areas: "p1 p1 i1"
+                        "i2 p2 i1"
+                        "i2 p3 i1";
+    gap: 1.5rem;
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.about-us-p1 {
+    background: red;
+    grid-area: p1;
+}
+
+.about-us-p2 {
+    background: greenyellow;
+    grid-area: p2;
+}
+
+.about-us-p3 {
+    background: blue;
+    grid-area: p3;
+}
+
+.about-us-container img {
+    object-fit: scale-down;
+}
+
+.about-us-image-1 {
+    grid-area: i1;
+    /* max-height: 50%;
+    max-width: 50%; */
+}
+
+.about-us-image-2 {
+    grid-area: i2;
+    /* max-height: 50%;
+    max-width: 50%; */
+   
 }
 
 .about-us h2 {
