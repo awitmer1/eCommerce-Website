@@ -26,6 +26,8 @@ nav a:hover {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-weight: 125;
 }
 
 footer {
@@ -37,10 +39,22 @@ footer {
 
 
 .hero {
-    background-color: 707070;
-    background: url("./Assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg") no-repeat fixed center;
+    /* background-color: 707070;
+    background: linear-gradient(0.25turn, black 10%, transparent 30%,transparent, transparent 70%, black 90%), url("./Assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg") no-repeat fixed center;
+    background-size: contain;
     background-attachment: scroll;
     min-height: 50rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; */
+}
+
+.hero-contain {
+    background-color: 707070;
+    background: linear-gradient(0.25turn, black 20%, transparent 30%, transparent, transparent 70%, black 80%), url("./Assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg") no-repeat fixed center;
+    background-size: contain;
+    background-attachment: scroll;
+    /* min-height: 50rem; */
+    max-height: 30rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -49,7 +63,7 @@ footer {
         display: flex;
         color: white;
         text-transform: uppercase;
-        min-height: 50rem;
+        min-height: 30rem;
         align-items: center;
         justify-content: space-between;
 }
@@ -77,6 +91,7 @@ footer {
     grid-template-areas: "p1 p1 i1"
                         "i2 p2 i1"
                         "i2 p3 i1";
+    /* margin-top: 2rem; */
     gap: 1.5rem;
     padding-block: 2rem;
     width: min(95%, 70rem);
@@ -101,25 +116,26 @@ footer {
 
 .about-us-container img {
     object-fit: scale-down;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .about-us-image-1 {
     grid-area: i1;
-    /* max-height: 50%;
-    max-width: 50%; */
+    grid-column: span 2;
+    transform: scaleX(-1);
 }
 
 .about-us-image-2 {
     grid-area: i2;
-    /* max-height: 50%;
-    max-width: 50%; */
-   
+    /* grid-column: span 2;  
+    grid-row: span 1;   */
 }
 
 .about-us h2 {
     border-bottom: black solid 5px;
     text-transform: uppercase;
-    margin-right: 30rem;
+    margin-right: 20rem;
 }
 
 .our-products {
@@ -151,6 +167,7 @@ footer {
 .our-products img {
     width: 15rem;
     height: 15rem;
+    object-fit: cover;
     border: black solid 1px;
 }
 
