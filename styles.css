@@ -24,18 +24,24 @@ nav a:hover {
     color: #BF7631;
 }
 
-nav input[type=text] {
+nav input[type=search] {
+    width: 200px;
+}
+
+
+
+/* nav input[type=text] {
     position: relative;
     width: 200px;
-    /* height: 36px; */
+    height: 36px;
     box-sizing: border-box;
     border: 1px solid black;
     font-size: 16px;
     background-color: white;
     padding: 2px 40px 2px 10px;
-}
+} */
 
-nav input[type=submit] {
+/* nav input[type=submit] {
     position: relative;
     width: 30px;
     height: 20%;
@@ -44,9 +50,9 @@ nav input[type=submit] {
     border: none;
     color: black;
     background: url('./Assets/1200px-Google_Magnifying_Glass.svg.png');
-    /* display: block;
-    cursor: pointer; */
-}
+    display: block;
+    cursor: pointer;
+} */
 
 
 body {
@@ -128,17 +134,17 @@ footer {
 }
 
 .about-us-p1 {
-    background: red;
+    /* background: red; */
     grid-area: p1;
 }
 
 .about-us-p2 {
-    background: greenyellow;
+    /* background: greenyellow; */
     grid-area: p2;
 }
 
 .about-us-p3 {
-    background: blue;
+    /* background: blue; */
     grid-area: p3;
 }
 
@@ -257,4 +263,35 @@ footer {
     height: 2rem;
     width: 4rem;
     align-self: flex-end;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.footer-links img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    gap: 6rem;
+    margin-left: 10rem;
+    text-size-adjust: smaller;
+    font-weight: lighter;
+    flex-wrap: wrap;
 }

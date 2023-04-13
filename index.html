@@ -8,7 +8,7 @@
     <title>CARA CARA</title>
 </head>
 <body>
-    <header>   
+    <header id="home">   
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -17,12 +17,12 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <h1 class="brand">CARA <img class="pot-logo" src="Assets\icons8-pottery-96.png" alt="Orange Pot Logo" style="width:25px;height:25px;"> CARA</h1>
-            <form class="search-bar"><input type="text"><input type="submit"></form>
+            <form class="search-bar"><input type="search"></form>
             <p class="cart"><a href="#cart">CART (0)</a></p>
         </nav>
     </header> 
     <main>
-        <section id="home" class="hero">
+        <section class="hero">
             <div class="hero-contain">
                 <div class="hero-text">
                 <h2 class="ht-1">ceramics<br>crafted by <br>hand...</h2>
@@ -32,7 +32,9 @@
             </div>
             
         <section id="about" class="about-us">
-            <h2>About Us</h2>
+            <div>
+                <h2>About Us</h2>
+            </div>
             <br>
             <div class="about-us-container"> 
                 <p class="about-us-p1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -233,16 +235,28 @@
         </section>
     </main>
     <footer>
-        <a><img src="Assets/icons8-youtube-96.png"></a>
-        <a><img src="Assets/icons8-facebook-96 (1).png"></a>
-        <a><img src="Assets/icons8-pottery-96 (1).png"></a>
-        <a><img src="Assets/icons8-twitter-96.png"></a>
-        <a><img src="Assets/icons8-instagram-96.png"></a>
-        <h1>CARA</h1>
-        <h1>CARA</h1>
-        <p>Pretium nibh ipsum consequat nisl vel pretium.</p>
-        <p>Amet tellus cras adipiscing enim eu turpis.</p>
-        <p>©Copyright 2015 - 2020</p>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div>
+                    <a><img src="Assets/icons8-youtube-96.png"></a>
+                    <a><img src="Assets/icons8-facebook-96 (1).png"></a>
+                </div>
+                <div class="footer-logo">
+                    <h1>CARA</h1>
+                    <a><img src="Assets/icons8-pottery-96 (1).png"></a>
+                    <h1>CARA</h1>
+                </div>
+                <div>
+                    <a><img src="Assets/icons8-twitter-96.png"></a>
+                    <a><img src="Assets/icons8-instagram-96.png"></a>                    
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>Pretium nibh ipsum consequat nisl vel pretium.</p>
+                <p>Amet tellus cras adipiscing enim eu turpis.</p>
+                <p>©Copyright 2015 - 2020</p>
+            </div>            
+        </div>        
     </footer>
 </body>
 </html>
