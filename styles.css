@@ -213,6 +213,7 @@ footer {
     justify-content: center;
     margin-left: 10rem;
     margin-right: 10rem;
+    font-size: x-large;
 }
 
 .contact-us h3 {
@@ -221,6 +222,9 @@ footer {
     margin-right: 30rem;
 }
 
+.contact-us input {
+    margin-top: -2em;
+}
 .contact-us button {
     color: white;
     background-color: #BF7631;
