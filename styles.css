@@ -245,6 +245,7 @@ footer {
     margin-left: 10rem;
     margin-right: 10rem;
     font-size: x-large;
+    text-transform: uppercase;
 }
 
 .contact-us h3 {
@@ -255,6 +256,10 @@ footer {
 
 .contact-us input {
     margin-top: -2em;
+}
+
+.contact-us textarea{
+    margin-top: -2rem;
 }
 .contact-us button {
     color: white;
