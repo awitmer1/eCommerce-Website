@@ -24,6 +24,31 @@ nav a:hover {
     color: #BF7631;
 }
 
+nav input[type=text] {
+    position: relative;
+    width: 200px;
+    /* height: 36px; */
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: white;
+    padding: 2px 40px 2px 10px;
+}
+
+nav input[type=submit] {
+    position: relative;
+    width: 30px;
+    height: 20%;
+    top: 0px;
+    right: 0px;
+    border: none;
+    color: black;
+    background: url('./Assets/1200px-Google_Magnifying_Glass.svg.png');
+    /* display: block;
+    cursor: pointer; */
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 125;
@@ -148,8 +173,8 @@ footer {
     display: grid;
     grid-template-areas: "top top top" "mid mid mid" "bot bot bot";
     justify-content: space-between;
-    /* margin-left: 5rem; */
-    /* margin-right: 5rem; */
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 5rem;
 }
 
